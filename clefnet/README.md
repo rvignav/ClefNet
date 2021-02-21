@@ -1,4 +1,4 @@
-# TFMusicAudioEncoder
+# ClefNet Autoencoder Architecture
 
 ## Setup
 1. Run `pip3 install -r requirements.txt`.
