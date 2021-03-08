@@ -26,6 +26,10 @@ Citation
 <td align="center">Latent Space Web App</td>
 <td align="center">https://latent-space.tech</td>
 </tr>
+ <tr>
+<td align="center">Latent Space Video Demo</td>
+<td align="center">https://latent-space.tech/demo</td>
+</tr>
   <tr>
 <td align="center">Latent Space GitHub Repo</td>
 <td align="center">https://github.com/SwiftWinds/hackmit</td>
