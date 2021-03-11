@@ -15,7 +15,7 @@ Citation
 <th valign="bottom">URL</th>
 <!-- TABLE BODY -->
 <tr>
-<td align="center">arXiv</td>
+<td align="center">Preprints.org</td>
 <td align="center">Link</td>
 </tr>
  <tr>
