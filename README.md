@@ -1,10 +1,11 @@
 ## ClefNet: Recurrent Autoencoders with Dynamic Time Warping for Near-Lossless Music Compression and Minimal-Latency Transmission
 Vignav Ramesh and Mason Wang
 
-This is a TensorFlow implementation of the [ClefNet paper](https://arxiv.org):
-```
-Citation
-```
+This is a TensorFlow implementation of the [ClefNet paper](https://www.preprints.org/manuscript/202103.0360/v1):
+
+`
+Ramesh, V.; Wang, M. ClefNet: Recurrent Autoencoders with Dynamic Time Warping for Near-Lossless Music Compression and Minimal-Latency Transmission. Preprints 2021, 2021030360 (doi: 10.20944/preprints202103.0360.v1).
+`
 
 ### Resources
 
@@ -16,7 +17,7 @@ Citation
 <!-- TABLE BODY -->
 <tr>
 <td align="center">Preprints.org</td>
-<td align="center">Link</td>
+<td align="center">https://www.preprints.org/manuscript/202103.0360/v1</td>
 </tr>
  <tr>
 <td align="center">Full Paper (PDF)</td>
