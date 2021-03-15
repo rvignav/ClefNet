@@ -20,7 +20,7 @@ Citation
 </tr>
  <tr>
 <td align="center">Full Paper (PDF)</td>
-<td align="center">Link</td>
+<td align="center">http://bit.ly/ClefNet-2021</td>
 </tr>
   <tr>
 <td align="center">Latent Space Web App</td>
