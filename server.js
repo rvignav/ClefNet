@@ -1,5 +1,6 @@
 require("dotenv").config();
 var sslRedirect = require("heroku-ssl-redirect");
+var favicon = require("serve-favicon");
 // Get twillio auth and SID from heroku if deployed, else get from local .env file
 var twillioAuthToken =
   process.env.HEROKU_AUTH_TOKEN || process.env.LOCAL_AUTH_TOKEN;
@@ -17,6 +18,9 @@ const url = require("url");
 function redirectUnmatched(req, res) {
   res.redirect("/");
 }
+
+// favicon
+app.use(favicon(path.join(__dirname, "public", "assets", "img", "logo.png")));
 
 // enable ssl redirect
 app.use(sslRedirect());
@@ -37,6 +41,22 @@ app.get("/", function (req, res) {
 
 app.get("/demo", function (req, res) {
   res.redirect("https://youtu.be/1GUb3c0IIh0");
+});
+
+app.get("/ClefNet", function (req, res) {
+  res.redirect("/ClefNet.pdf");
+});
+
+app.get("/repo", function (req, res) {
+  res.redirect("http://github.com/rvignav/ClefNet");
+});
+
+app.get("/preprints", function (req, res) {
+  res.redirect("https://www.preprints.org/manuscript/202103.0360/v1");
+});
+
+app.get("/paper", function (req, res) {
+  res.redirect("/ClefNet.pdf");
 });
 
 app.get("/join/", function (req, res) {
