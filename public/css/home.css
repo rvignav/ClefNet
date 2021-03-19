@@ -171,12 +171,14 @@ ul li:before {
 }
 
 .research .cite {
+  font-size: 1em;
   border: 1.5px #222 solid;
   padding: 1.2em;
 }
 
 .contributions li {
-  padding-bottom: 6.9px;
+  font-size: 1.2em;
+  padding-bottom: 0.69em;
 }
 
 
