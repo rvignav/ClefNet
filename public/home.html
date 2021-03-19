@@ -23,7 +23,7 @@
     <title>Latent Space</title>
     <meta
       name="description"
-      content="Using recurrent neural autoencoders, Latent Space compresses audio streams with embeddings specifically for music, eliminating latency and allowing for smooth real-time virtual collaboration."
+      content="Using recurrent autoencoders, Latent Space compresses audio streams with embeddings specifically for music, eliminating latency and allowing for smooth real-time virtual collaboration."
     />
     <script
       src="https://kit.fontawesome.com/7593f939e5.js"
@@ -61,7 +61,7 @@
           <div class="col">
             <h1 class="title"><span>Using AI to Decrease Latency</span></h1>
             <p>
-              Using recurrent neural autoencoders, Latent Space
+              Using recurrent autoencoders, Latent Space
               <b> compresses audio streams </b>with embeddings specifically for
               music, eliminating latency and allowing for
               <b>smooth real-time virtual collaboration</b>.
@@ -85,12 +85,98 @@
                 </li>
                 <li>and then stretch the latent space back into the output.</li>
               </ol>
-              Latent Space uses recurrent neural autoencoders (RAEs) to optimize
-              audio data transmission by domain&mdash;a novel approach to
+              Latent Space uses recurrent autoencoders (RAEs) to optimize audio
+              data transmission by domain&mdash;a novel approach to
               communication.
             </div>
+            <p class="font-weight-bold">
+              Want to learn more? Watch our
+              <a
+                class="link"
+                href="https://www.youtube.com/watch?v=1GUb3c0IIh0"
+                target="_blank"
+                >video demo</a
+              >.
+            </p>
             <a href="#call"
               ><button class="btn font-weight-bold mb-2">Get started</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashed-bottom section" id="research">
+      <div class="container research">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title pb-3"><span>ClefNet</span></h1>
+          </div>
+          <div class="col-12">
+            <p>
+              Latent Space is a TensorFlow implementation of the
+              <a
+                href="https://www.preprints.org/manuscript/202103.0360/v1"
+                target="_blank"
+                >ClefNet paper</a
+              >:
+            </p>
+
+            <p class="cite my-4">
+              Ramesh, V.; Wang, M. ClefNet: Recurrent Autoencoders with Dynamic
+              Time Warping for Near-Lossless Music Compression and
+              Minimal-Latency Transmission. Preprints 2021, 2021030360 (doi:
+              <a
+                href="https://www.preprints.org/manuscript/202103.0360/v1"
+                target="_blank"
+                class="wordwrap"
+                >10.20944/preprints202103.0360.v1</a
+              >).
+            </p>
+
+            <p class="pb-2">
+              The main contributions of this paper can be summarized as follows:
+            </p>
+            <ol class="contributions">
+              <li>
+                We propose<b>
+                  an architecture for a platform with end-to-end, near-lossless
+                  audio transmission tailored specifically for online joint
+                  music production</b
+                >, called Latent Space.
+              </li>
+              <li>
+                We discuss
+                <b>
+                  the usage of a recurrent autoencoder with sequence-aware
+                  encoding (RAES)
+                </b>
+                and a 1D convolutional layer for audio compression, which we dub
+                ClefNet.
+              </li>
+              <li>
+                We propose a
+                <b
+                  >new evaluation metric for naive autoencoders (AEs), MSE-DTW
+                  loss,</b
+                >
+                which combines the traditional mean square error (MSE) loss
+                function with dynamic time warping (DTW) to prevent an increase
+                in loss when the target sequence predicted by the AE is strictly
+                a temporal variation of the source sequence.
+              </li>
+              <li>
+                We detail the
+                <b>logistics of a live system implementation</b> which uses the
+                Web Audio API to extract raw audio samples in real-time to feed
+                into our client-side model before relaying the traffic using
+                peer-to-peer WebRTC technology.
+              </li>
+            </ol>
+            <a href="/ClefNet.pdf"
+              ><button class="btn font-weight-bold mb-2">
+                Full Paper (PDF)
+              </button></a
             >
           </div>
         </div>
@@ -189,11 +275,27 @@
           class="col-12 col-md-6 order-1 order-md-3 text-center text-md-right"
         >
           <a
-            href="http://github.com/SwiftWinds/hackmit"
+            href="http://github.com/rvignav/ClefNet"
             target="_blank"
             rel="noopener noreferrer"
             style="color: #212529;"
             ><i class="fab fa-github mr-1"></i><u>Github Repo</u></a
+          >
+
+          <a
+            href="https://www.preprints.org/manuscript/202103.0360/v1"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #212529;"
+            ><i class="fas fa-paperclip mr-1 ml-2"></i><u>ClefNet Paper</u></a
+          >
+
+          <a
+            href="https://www.preprints.org/manuscript/202103.0360/v1"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #212529;"
+            ><i class="fab fa-youtube mr-1 ml-2"></i><u>Demo</u></a
           >
         </div>
       </div>

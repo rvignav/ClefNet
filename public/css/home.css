@@ -11,7 +11,7 @@ html {
 }
 
 p {
-  font-size: 1.42em;
+  font-size: 1.2em;
 }
 
 #waves-hero {
@@ -95,7 +95,8 @@ p {
   margin-bottom: 0.25em;
 }
 
-.hero h1, .hero h2 {
+.hero h1,
+.hero h2 {
   line-height: 0.95em;
   margin-bottom: 0.25em;
 }
@@ -152,4 +153,34 @@ ul li:before {
 
 .advantages i {
   color: #0096b4;
+}
+
+.research p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.research a, .link {
+  color: #0096b4;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.wordwrap {
+  word-wrap: break-word;
+}
+
+.research .cite {
+  border: 1.5px #222 solid;
+  padding: 1.2em;
+}
+
+.contributions li {
+  padding-bottom: 6.9px;
+}
+
+
+button {
+  transition: ease-in-out;
+  transition-duration: 200ms;
 }
