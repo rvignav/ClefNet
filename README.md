@@ -19,7 +19,7 @@ Ramesh, V.; Wang, M. ClefNet: Recurrent Autoencoders with Dynamic Time Warping f
 </tr>
  <tr>
 <td align="center">Full Paper (PDF)</td>
-<td align="center">http://bit.ly/ClefNet-2021</td>
+<td align="center">https://latent-space.tech/paper</td>
 </tr>
   <tr>
 <td align="center">Latent Space Web App</td>
